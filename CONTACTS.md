@@ -12,8 +12,14 @@ information and contact routes.
 | `statscf_0.1_hkdem.sav` | Column EM and DEM-weighted temperature summaries before background subtraction | Patrick Antolin |
 | `statscf_0.1_hkdem_bckgsub_shft.sav` | Background-subtracted column EM and DEM-weighted temperature summaries | Patrick Antolin |
 
-Request the original file versions listed in the README. The program reads these
-existing data products; it does not derive heights or DEMs from telescope images.
+The program requires **three input files**. Geometry and heights are both read
+from `EvtCatalog_new.csv`; the `height` entry above is a column in that file,
+not a fourth input file.
+
+Request the study versions for the **30 May 2020 campfire catalogue**, using the
+filenames below. The program checks the reference file versions as described in
+the [README](README.md). It reads these existing data products; it does not derive
+heights or DEMs from telescope images.
 
 ## EUI project, event catalogue and geometry
 
@@ -23,6 +29,18 @@ Observatory of Belgium:
 
 - David Berghmans: [Royal Observatory of Belgium — EUI team](https://www.sidc.be/EUI/community/consortium)
 - Cis (Francis) Verbeeck: [Royal Observatory of Belgium — EUI team](https://www.sidc.be/EUI/community/consortium)
+
+**File to request from David Berghmans and Cis Verbeeck:**
+`EvtCatalog_new.csv`, the event catalogue used for the 30 May 2020 thermal-energy
+study, with the original `CF` event IDs and these geometric columns:
+
+- `projected_area`: projected event area in pixels.
+- `xwidth`, `ywidth`: bounding-box dimensions in pixels.
+- `major_axis`, `minor_axis`: second-moment axis lengths in pixels.
+
+The reference catalogue also contains the `height` column described below.
+The program calculates the effective emitting volumes from the geometric
+columns; a separate volume file is not required.
 
 David Berghmans is the EUI Principal Investigator. Cis Verbeeck is the project
 manager for the EUI instrument on Solar Orbiter. The catalogue and geometrical
@@ -37,9 +55,15 @@ the Solar Orbiter/EUI*, A&A 656, L4.
 
 ## Stereoscopic heights
 
-For height measurements, triangulation, their uncertainties and interpretation,
-please contact **Andrei Zhukov**:
+For the original stereoscopic height measurements, triangulation, their
+uncertainties and interpretation, please contact **Andrei Zhukov**:
 [Royal Observatory of Belgium — EUI team](https://www.sidc.be/EUI/community/consortium).
+
+**Height data to request from Andrei Zhukov:** the stereoscopic heights for the
+30 May 2020 campfires, with the corresponding `CF` event IDs (see Paper II).
+In this package, the required heights are already included in the `height`
+column of the reference `EvtCatalog_new.csv`, in **metres**. The program reads
+that column; it does not read a separate height file.
 
 Paper II: Zhukov et al. (2021), *Stereoscopy of extreme UV quiet Sun brightenings
 observed by Solar Orbiter/EUI*, A&A 656, A35.
@@ -84,8 +108,10 @@ For **discussion and assessment of the results and their implications for corona
 heating in this and related Solar Orbiter studies**, contact
 **Daniel Müller**: [European Space Agency (ESA) — professional profile](https://orcid.org/0000-0001-9027-9954).
 
-These contacts concern the scientific analysis and observational context. Requests
-for the original DEM files should go to Patrick Antolin as indicated above.
+These contacts concern the scientific analysis and observational context. For
+input data, request the event catalogue and geometry from David Berghmans and
+Cis Verbeeck, the original stereoscopic height measurements from Andrei Zhukov,
+and the DEM summary files from Patrick Antolin, as specified above.
 
 For this calculation and the thermal-energy study, contact **Olena Podladchikova**:
 [epodlad@gmail.com](mailto:epodlad@gmail.com).
