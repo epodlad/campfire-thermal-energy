@@ -91,6 +91,10 @@ in Paper I and Sect. 3.2 of the
 
 ## Scientific analysis, interpretation and calculation
 
+For questions about **event morphology and the observational characterisation of
+campfires in [Paper I](https://doi.org/10.1051/0004-6361/202140380)**, contact
+**David Berghmans**: [Royal Observatory of Belgium - EUI team](https://www.sidc.be/EUI/community/consortium).
+
 For scientific questions about the **EM analysis and its interpretation**, contact
 **Alexander Warmuth**: [Leibniz Institute for Astrophysics Potsdam (AIP) — staff profile](https://www.aip.de/en/members/alexander-warmuth/).
 
