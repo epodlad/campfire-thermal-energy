@@ -112,6 +112,10 @@ For **discussion and assessment of the results and their implications for corona
 heating in this and related Solar Orbiter studies**, contact
 **Daniel Müller**: [European Space Agency (ESA) — professional profile](https://orcid.org/0000-0001-9027-9954).
 
+For questions about **nanoflare modelling and simulations**, including the work of
+[Guerreiro et al. (2017)](https://doi.org/10.1051/0004-6361/201629795), contact
+**Margit Haberreiter**: [PMOD/WRC - staff profile](https://www.pmodwrc.ch/institut/mitarbeiter/margit-haberreiter/).
+
 These contacts concern the scientific analysis and observational context. For
 input data, request the event catalogue and geometry from David Berghmans and
 Cis Verbeeck, the original stereoscopic height measurements from Andrei Zhukov,
